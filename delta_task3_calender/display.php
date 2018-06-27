@@ -12,7 +12,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
-        echo "appointment name" . $row["appname"]. " - appointment date: " . $row["appdate"]. "<br>";
+        echo "Appointment name  :" . $row["appname"]. " - Appointment date :  " . $row["appdate"]. "<br>";
     }
 } else {
     echo "0 results";
